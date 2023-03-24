@@ -1,0 +1,17 @@
+﻿{
+	"invalid_credentials":
+	{			
+		"username" : "Murillo",
+		"password" : "Senha"
+	},
+	"valid_credentials":
+	{
+		"username" : "standard_user",
+		"password" : "secret_sauce"
+	},"without_credentials":
+	{
+		"username" : "",
+		"password" : ""
+	}
+
+}

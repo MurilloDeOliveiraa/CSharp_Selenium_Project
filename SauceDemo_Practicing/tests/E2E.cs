@@ -28,8 +28,7 @@ namespace SauceDemo_Practicing.tests
             LoginPage login = new LoginPage(getDriver());
             ProductsPage products = new ProductsPage(getDriver());
             CheckOutPage check = new CheckOutPage(getDriver());
-
-
+            //Automation Steps
             login.ExecuteLogin(username, password);
             products.WaitPageElement();
             products.SortProductsByPrice();

@@ -36,7 +36,7 @@ namespace SauceDemo_Practicing.tests
             //Changing to Checkout's page
             products.GoToCheckOutPage();
             check.CheckProducts();
-
+            //End of Test
         }
 
         public static IEnumerable<TestCaseData> credentialsSource()

@@ -33,6 +33,7 @@ namespace SauceDemo_Practicing.tests
             products.WaitPageElement();
             products.SortProductsByPrice();
             products.AdditensToCart();
+            //Changing to Checkout's page
             products.GoToCheckOutPage();
             check.CheckProducts();
 

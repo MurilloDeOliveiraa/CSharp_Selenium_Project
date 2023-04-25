@@ -11,13 +11,16 @@ namespace SauceDemo_Practicing.pages
 {
     internal class LoginPage
     {
-        private IWebDriver Driver;               
+        private IWebDriver Driver;
 
+        
         public LoginPage(IWebDriver driver)
         {
             this.Driver = driver;
             PageFactory.InitElements(this.Driver, this);
         }
+
+        #region Variables
 
         [FindsBy(How = How.Id, Using = "user-name")]
         private IWebElement usernameTextBox;
@@ -27,17 +30,13 @@ namespace SauceDemo_Practicing.pages
 
         [FindsBy(How = How.Id, Using = "login-button")]
         private IWebElement loginButton;
+        #endregion
 
         public void ExecuteLogin(String username, String password)
         {
             usernameTextBox.SendKeys(username);
             passwordTextBox.SendKeys(password);
             loginButton.Click();
-        }
-                              
-        
-        
-
-
+        }     
     }
 }

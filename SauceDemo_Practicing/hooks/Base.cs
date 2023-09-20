@@ -94,9 +94,7 @@ namespace SauceDemo_Practicing.hooks
 
         public void ConfigBrowser(String browser)
         {           
-            String chosenBrowser = browser;
-
-            switch (chosenBrowser)
+            switch (browser)
             {
                 case "Chrome":
                     new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
@@ -113,9 +111,6 @@ namespace SauceDemo_Practicing.hooks
         public void UrlTest(String site)
         {
             driver.Navigate().GoToUrl(site);
-
-        }   
-                
-
+        }          
     }
 }
